@@ -16,6 +16,7 @@ sudo usermod -a -G video $USER
 echo "" >> ~/.bashrc
 echo "export PATH=/usr/local/cuda-8.0/bin:$PATH" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=/usr/local/cuda8.0/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
+sudo ln -s /usr/local/cuda/bin/nvcc /sbin/nvcc
 git clone https://github.com/tpruvot/ccminer.git
 cd ccminer
 ./autogen.sh
